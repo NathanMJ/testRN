@@ -5,7 +5,7 @@ export default function Index() {
   const [firstNum, setFirstNum] = useState(0)
   const [secondNum, setSecondNum] = useState(0)
   const [sign, setSign] = useState()
-  const [result, setResult] = useState(firstNum)
+  const [result, setResult] = useState(0)
   const [writingNum, setWritingNum] = useState("first")
   const [historic, setHistoric] = useState("")
 
