@@ -24,8 +24,7 @@ export default function Index() {
     }
   }
 
-  const changeFirstNum = (text) => {
-    
+  const changeFirstNum = (text) => {    
     if (firstNum != 0)
       text = firstNum + '' + text
     setFirstNum(Number(text))
@@ -80,6 +79,7 @@ export default function Index() {
           tempResult = 'ERR'
         break;
     }
+
     if(isNaN(firstNum) || isNaN(secondNum)){
       tempResult = 'ERR'
     }
@@ -88,20 +88,6 @@ export default function Index() {
     let totalHistoric = historic + `\n${firstNum} ${sign} ${secondNum} = ${tempResult}`
     setHistoric(totalHistoric)
   }
-
-  useEffect(() => {
-    console.log(`firstNum= ${firstNum}`);
-  }, [firstNum])
-
-  useEffect(() => {
-    console.log(`secondNum= ${secondNum}`);
-  }, [secondNum])
-
-  useEffect(() => {
-    console.log(`writingNum= ${writingNum}`);
-  }, [writingNum])
-
-
 
   return (
     <View
